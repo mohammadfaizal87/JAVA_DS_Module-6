@@ -45,3 +45,34 @@ public class CountInversions {
             } else {
                 arr[k++] = rightArr[j++];
                 swaps += (leftArr.length - i); // Count inversions
+                
+            }
+       
+        }
+
+        while (i < leftArr.length) arr[k++] = leftArr[i++];
+        while (j < rightArr.length) arr[k++] = rightArr[j++];
+
+        return swaps;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
+        System.out.println(mergeSortAndCount(arr, 0, n - 1));
+    }
+}
+
+
+*/
+```
+
+## Output:
+
+<img width="466" height="401" alt="image" src="https://github.com/user-attachments/assets/b2686bb6-2298-4e84-bfaf-02f66055ae6c" />
+
+
+## Result:
+Thus the Java program to to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < jis implemented successfully.
